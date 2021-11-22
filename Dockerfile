@@ -4,6 +4,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Cleanup unneeded files, relative to working directory
+#test
 RUN rm -rf ./*
 
 COPY build/ /usr/share/nginx/html/
